@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MATLAB_TEST" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="MATLAB_TEST" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-malign-double" />
+			<Add option="-fno-exceptions" />
+			<Add option="-DNDEBUG" />
+			<Add option="-DMATLAB_MEX_FILE" />
+			<Add directory="H:/Matlab2015b/extern/include" />
+			<Add directory="H:/Matlab2015b/simulink/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-shared" />
+			<Add option="-Wl,--out-implib=sfuntmpl.a" />
+			<Add library="libmx" />
+			<Add library="libmex" />
+			<Add library="libmatlb" />
+			<Add library="libmat" />
+			<Add directory="H:/Matlab2015b/extern/lib/win32/gcc" />
+		</Linker>
+		<Unit filename="mexversion.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="sfuntmpl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

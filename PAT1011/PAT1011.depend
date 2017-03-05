@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1486875593 source:f:\cproject\pat1011\pat1011.c
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+
+1486866039 source:f:\cproject\pat1011\teststrrev.c
+	<stdio.h>
+	<string.h>
+

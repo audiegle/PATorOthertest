@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1487107932 source:f:\cproject\pat1026\pat1026.c
+	<stdio.h>
+	<math.h>
+
